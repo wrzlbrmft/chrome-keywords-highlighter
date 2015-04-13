@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Keywords Highlighter",
+	"short_name": "Keywords Highlighter",
+	"description": "Automatically highlights given keywords on web pages.",
+	"version": "0.0.0",
+	"icons": {
+		"64": "icons/icon.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"64": "icons/icon.png"
+		},
+		"default_title": "Keywords Highlighter",
+		"default_popup": "popup.html"
+	}
+}
