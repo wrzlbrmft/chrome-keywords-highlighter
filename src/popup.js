@@ -1,8 +1,8 @@
 function loadOptions() {
 	if ("undefined" != typeof localStorage) {
 		document.getElementById("textKeywords").value = localStorage.getItem("keywords");
-		document.getElementById("colorColor").value = localStorage.getItem("color");
-		document.getElementById("colorBackgroundColor").value = localStorage.getItem("backgroundColor");
+		document.getElementById("colorColor").value = localStorage.getItem("color") || "#000000";
+		document.getElementById("colorBackgroundColor").value = localStorage.getItem("backgroundColor") || "#ffff00";
 	}
 }
 

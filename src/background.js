@@ -10,8 +10,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 						chrome.tabs.sendMessage(tabs[0].id, {
 							"message": "returnOptions",
 							"keywords": localStorage.getItem("keywords"),
-							"color": localStorage.getItem("color"),
-							"backgroundColor": localStorage.getItem("backgroundColor")
+							"color": localStorage.getItem("color") || "#000000",
+							"backgroundColor": localStorage.getItem("backgroundColor") || "#ffff00"
 						});
 					}
 				}
