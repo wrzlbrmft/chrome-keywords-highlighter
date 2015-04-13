@@ -2,9 +2,11 @@ function keywordsHighlighter(options) {
 	// Based on "highlight: JavaScript text higlighting jQuery plugin" by Johann Burkard.
 	// http://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html
 	// MIT license.
-	function highlight(node, pos, keyword) {
+	function highlight(node, pos, keyword, options) {
 		var span = document.createElement("span");
 		span.className = "highlighted";
+		span.style.color = options.color;
+		span.style.backgroundColor = options.backgroundColor;
 
 		var highlighted = node.splitText(pos);
 		/*var afterHighlighted = */highlighted.splitText(keyword.length);
@@ -14,7 +16,7 @@ function keywordsHighlighter(options) {
 		highlighted.parentNode.replaceChild(span, highlighted);
 	}
 
-	function addHighlights(node, keywords) {
+	function addHighlights(node, keywords, options) {
 		var skip = 0;
 
 		if (3 == node.nodeType) {
@@ -22,14 +24,14 @@ function keywordsHighlighter(options) {
 				var keyword = keywords[i].toLowerCase();
 				var pos = node.data.toLowerCase().indexOf(keyword);
 				if (0 <= pos) {
-					highlight(node, pos, keyword);
+					highlight(node, pos, keyword, options);
 					skip = 1;
 				}
 			}
 		}
 		else if (1 == node.nodeType && !/(script|style)/i.test(node.tagName) && node.childNodes) {
 			for (var j = 0; j < node.childNodes.length; j++) {
-				j += addHighlights(node.childNodes[j], keywords);
+				j += addHighlights(node.childNodes[j], keywords, options);
 			}
 		}
 
@@ -37,14 +39,17 @@ function keywordsHighlighter(options) {
 	}
 
 	var keywords = options.keywords.split(",");
-	addHighlights(document.body, keywords);
+	delete options.keywords;
+	addHighlights(document.body, keywords, options);
 }
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	if ("returnOptions" == request.message) {
 		if ("undefined" != typeof request.keywords && request.keywords) {
 			keywordsHighlighter({
-				"keywords": request.keywords
+				"keywords": request.keywords,
+				"color": request.color,
+				"backgroundColor": request.backgroundColor
 			});
 		}
 	}

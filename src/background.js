@@ -9,7 +9,9 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 					if ("undefined" != typeof tabs[0].id && tabs[0].id) {
 						chrome.tabs.sendMessage(tabs[0].id, {
 							"message": "returnOptions",
-							"keywords": localStorage.getItem("keywords")
+							"keywords": localStorage.getItem("keywords"),
+							"color": localStorage.getItem("color"),
+							"backgroundColor": localStorage.getItem("backgroundColor")
 						});
 					}
 				}
