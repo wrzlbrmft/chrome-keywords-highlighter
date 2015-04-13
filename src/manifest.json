@@ -15,6 +15,7 @@
 		"128": "icons/icon128.png",
 		"256": "icons/icon256.png"
 	},
+	"homepage_url": "https://github.com/wrzlbrmft/chrome-keywords-highlighter/blob/master/README.md",
 	"permissions": ["tabs"],
 	"background": {
 		"scripts": ["background.js"]
