@@ -5,7 +5,15 @@
 	"description": "Automatically highlights given keywords on web pages.",
 	"version": "0.0.0",
 	"icons": {
-		"64": "icons/icon.png"
+		"16": "icons/icon16.png",
+		"24": "icons/icon24.png",
+		"32": "icons/icon32.png",
+		"48": "icons/icon48.png",
+		"64": "icons/icon64.png",
+		"72": "icons/icon72.png",
+		"96": "icons/icon96.png",
+		"128": "icons/icon128.png",
+		"256": "icons/icon256.png"
 	},
 	"permissions": ["tabs"],
 	"background": {
@@ -20,7 +28,15 @@
 	],
 	"browser_action": {
 		"default_icon": {
-			"64": "icons/icon.png"
+			"16": "icons/icon16.png",
+			"24": "icons/icon24.png",
+			"32": "icons/icon32.png",
+			"48": "icons/icon48.png",
+			"64": "icons/icon64.png",
+			"72": "icons/icon72.png",
+			"96": "icons/icon96.png",
+			"128": "icons/icon128.png",
+			"256": "icons/icon256.png"
 		},
 		"default_title": "Keywords Highlighter",
 		"default_popup": "popup.html"

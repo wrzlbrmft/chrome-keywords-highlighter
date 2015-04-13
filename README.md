@@ -15,3 +15,7 @@ was also using
 [highlight](http://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html)
 by [Johann Burkard](http://johannburkard.de/), both distributed under the terms
 of the [MIT License](http://opensource.org/licenses/MIT).
+
+The icon is taken from the
+*[Soft Scraps Icons](http://www.iconarchive.com/show/soft-scraps-icons-by-hopstarter.html)*
+icons pack by [Hopstarter](http://www.iconarchive.com/artist/hopstarter.html).
