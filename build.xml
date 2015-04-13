@@ -1,0 +1,29 @@
+<project name="keywords-highlighter" basedir="." default="main">
+
+	<property name="version" value="0.1.0" />
+
+	<property name="src.dir" value="src" />
+	<property name="build.dir" value="build" />
+	<property name="zip.dir" value="${build.dir}/zip-files" />
+	<property name="zip.file" value="${build.dir}/${ant.project.name}-${version}.zip" />
+
+	<target name="clean">
+		<delete dir="${build.dir}" />
+	</target>
+
+	<target name="compile" depends="clean">
+		<mkdir dir="${build.dir}" />
+		<copy todir="${zip.dir}">
+			<fileset dir="${src.dir}" />
+		</copy>
+		<replace file="${zip.dir}/manifest.json" token="0.0.0" value="${version}" />
+	</target>
+
+	<target name="zip" depends="compile">
+		<copy file="key.pem" todir="${zip.dir}" />
+		<zip destfile="${zip.file}" basedir="${zip.dir}" />
+	</target>
+
+	<target name="main" depends="zip" />
+
+</project>
