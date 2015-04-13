@@ -1,11 +1,17 @@
+function keywordsHighlighter(options) {
+	document.body.style.backgroundColor = options.keywords;
+}
+
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-	if ("returnKeywords" == request.message) {
+	if ("returnOptions" == request.message) {
 		if ("undefined" != typeof request.keywords && request.keywords) {
-			document.body.style.backgroundColor = request.keywords;
+			keywordsHighlighter({
+				"keywords": request.keywords
+			});
 		}
 	}
 });
 
 chrome.runtime.sendMessage({
-	"message": "getKeywords"
+	"message": "getOptions"
 });
