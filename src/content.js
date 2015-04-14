@@ -19,8 +19,9 @@ function keywordsHighlighter(options) {
 	function addHighlights(node, keywords, options) {
 		var skip = 0;
 
+		var i;
 		if (3 == node.nodeType) {
-			for (var i = 0; i < keywords.length; i++) {
+			for (i = 0; i < keywords.length; i++) {
 				var keyword = keywords[i].toLowerCase();
 				var pos = node.data.toLowerCase().indexOf(keyword);
 				if (0 <= pos) {
@@ -29,9 +30,9 @@ function keywordsHighlighter(options) {
 				}
 			}
 		}
-		else if (1 == node.nodeType && !/(script|style)/i.test(node.tagName) && node.childNodes) {
-			for (var j = 0; j < node.childNodes.length; j++) {
-				j += addHighlights(node.childNodes[j], keywords, options);
+		else if (1 == node.nodeType && !/(script|style|textarea)/i.test(node.tagName) && node.childNodes) {
+			for (i = 0; i < node.childNodes.length; i++) {
+				i += addHighlights(node.childNodes[i], keywords, options);
 			}
 		}
 
