@@ -1,4 +1,4 @@
-function keywordsHighlighter(options) {
+function keywordsHighlighter(options, remove) {
 	// Based on "highlight: JavaScript text higlighting jQuery plugin" by Johann Burkard.
 	// http://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html
 	// MIT license.
@@ -39,6 +39,17 @@ function keywordsHighlighter(options) {
 		return skip;
 	}
 
+	function removeHighlights(node) {
+		var span;
+		while (span = node.querySelector("span.highlighted")) {
+			span.outerHTML = span.innerHTML;
+		}
+	}
+
+	if (remove) {
+		removeHighlights(document.body);
+	}
+
 	var keywords = options.keywords.split(",");
 	delete options.keywords;
 	addHighlights(document.body, keywords, options);
@@ -48,14 +59,17 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	if ("returnOptions" == request.message) {
 		if ("undefined" != typeof request.keywords && request.keywords) {
 			keywordsHighlighter({
-				"keywords": request.keywords,
-				"color": request.color,
-				"backgroundColor": request.backgroundColor
-			});
+					"keywords": request.keywords,
+					"color": request.color,
+					"backgroundColor": request.backgroundColor
+				},
+				request.remove
+			);
 		}
 	}
 });
 
 chrome.runtime.sendMessage({
-	"message": "getOptions"
+	"message": "getOptions",
+	"remove": false
 });
