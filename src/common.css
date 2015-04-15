@@ -1,5 +1,6 @@
 body#popup {
 	font-size: 13px;
+	background-color: #ddd;
 }
 
 body#options {
@@ -30,12 +31,16 @@ p {
 }
 
 textarea {
-	width: 300px;
+	width: 325px;
 }
 
 em {
 	display: block;
-	width: 300px;
+	width: 325px;
 	text-align: right;
-	font-size: 0.9em;
+	font-size: 90%;
+}
+
+button {
+	font-size: 115%;
 }

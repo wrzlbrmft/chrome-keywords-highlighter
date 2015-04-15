@@ -1,4 +1,4 @@
-# Keywords Highlighter
+# Automatic Keywords Highlighter
 
 <img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/src/icons/icon128.png" align="right" style="padding-left: 10px;" />
 
