@@ -18,13 +18,13 @@ Stop searching! Use *Automatic Keywords Highlighter!*
 
 ## Screenshots
 
-<a href="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot1.jpg" target="_blank"><img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot1.jpg" width="100" border="0" /></a>
+<a href="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot1.jpg" target="_blank"><img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot1.jpg" width="150" border="0" /></a>
 &nbsp;
-<a href="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot2.jpg" target="_blank"><img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot2.jpg" width="100" border="0" /></a>
+<a href="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot2.jpg" target="_blank"><img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot2.jpg" width="150" border="0" /></a>
 &nbsp;
-<a href="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot3.jpg" target="_blank"><img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot3.jpg" width="100" border="0" /></a>
+<a href="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot3.jpg" target="_blank"><img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot3.jpg" width="150" border="0" /></a>
 &nbsp;
-<a href="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot4.jpg" target="_blank"><img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot4.jpg" width="100" border="0" /></a>
+<a href="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot4.jpg" target="_blank"><img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot4.jpg" width="150" border="0" /></a>
 &nbsp;
 
 ## How to Contribute
