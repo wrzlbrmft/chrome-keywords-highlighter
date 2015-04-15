@@ -2,11 +2,30 @@
 
 <img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/src/icons/icon128.png" align="right" style="padding-left: 10px;" />
 
-*(work in progress)*
+Set a list of keywords and *Automatic Keywords Highlighter* will automatically
+highlight them on any web page you visit. The icon shows you how often a keyword
+was highlighted on the current page.
+
+Instead of searching for the interesting bits of a web page, let *Automatic
+Keywords Highlighter* show them to you. Simply type in a list of keywords and
+pick your favourite highlighter color.
+
+Stop searching! Use *Automatic Keywords Highlighter!*
 
 ## Installation
 
 *(work in progress)*
+
+## Screenshots
+
+<a href="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot1.jpg" target="_blank"><img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot1.jpg" width="100" border="0" /></a>
+&nbsp;
+<a href="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot2.jpg" target="_blank"><img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot2.jpg" width="100" border="0" /></a>
+&nbsp;
+<a href="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot3.jpg" target="_blank"><img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot3.jpg" width="100" border="0" /></a>
+&nbsp;
+<a href="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot4.jpg" target="_blank"><img src="https://raw.githubusercontent.com/wrzlbrmft/chrome-keywords-highlighter/master/google-webstore/screenshot4.jpg" width="100" border="0" /></a>
+&nbsp;
 
 ## How to Contribute
 
