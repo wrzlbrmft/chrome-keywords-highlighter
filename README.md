@@ -7,8 +7,8 @@ highlight them on any web page you visit. The icon shows you how often a keyword
 was highlighted on the current page.
 
 Instead of searching for the interesting bits of a web page, let *Automatic
-Keywords Highlighter* show them to you. Simply type in a list of keywords and
-pick your favourite highlighter color.
+Keywords Highlighter* show them to you instantly. Simply type in a list of
+keywords and pick your favourite highlighter color.
 
 Stop searching! Use *Automatic Keywords Highlighter!*
 
