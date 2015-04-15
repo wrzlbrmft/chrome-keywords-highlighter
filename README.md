@@ -14,7 +14,8 @@ Stop searching! Use *Automatic Keywords Highlighter!*
 
 ## Installation
 
-*(work in progress)*
+You can install *Automatic Keywords Highlighter* directly from the
+[Chrome Web Store](https://chrome.google.com/webstore/detail/automatic-keywords-highli/gcpknobcboilhnacklgmaamlcnblneoi).
 
 ## Screenshots
 
