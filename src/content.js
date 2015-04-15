@@ -1,5 +1,5 @@
 function keywordsHighlighter(options, remove) {
-	var highlightsCount = 0;
+	var occurrences = 0;
 
 	// Based on "highlight: JavaScript text higlighting jQuery plugin" by Johann Burkard.
 	// http://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html
@@ -7,8 +7,8 @@ function keywordsHighlighter(options, remove) {
 	function highlight(node, pos, keyword, options) {
 		var span = document.createElement("span");
 		span.className = "highlighted";
-		span.style.color = options.color;
-		span.style.backgroundColor = options.backgroundColor;
+		span.style.color = options.foreground;
+		span.style.backgroundColor = options.background;
 
 		var highlighted = node.splitText(pos);
 		/*var afterHighlighted = */highlighted.splitText(keyword.length);
@@ -17,7 +17,7 @@ function keywordsHighlighter(options, remove) {
 		span.appendChild(highlightedClone);
 		highlighted.parentNode.replaceChild(span, highlighted);
 
-		highlightsCount++;
+		occurrences++;
 	}
 
 	function addHighlights(node, keywords, options) {
@@ -49,7 +49,7 @@ function keywordsHighlighter(options, remove) {
 			span.outerHTML = span.innerHTML;
 		}
 
-		highlightsCount = 0;
+		occurrences = 0;
 	}
 
 	if (remove) {
@@ -61,8 +61,8 @@ function keywordsHighlighter(options, remove) {
 	addHighlights(document.body, keywords, options);
 
 	chrome.runtime.sendMessage({
-		"message": "setHighlightsCount",
-		"highlightsCount": highlightsCount
+		"message": "showOccurrences",
+		"occurrences": occurrences
 	});
 }
 
@@ -71,8 +71,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 		if ("undefined" != typeof request.keywords && request.keywords) {
 			keywordsHighlighter({
 					"keywords": request.keywords,
-					"color": request.color,
-					"backgroundColor": request.backgroundColor
+					"foreground": request.foreground,
+					"background": request.background
 				},
 				request.remove
 			);

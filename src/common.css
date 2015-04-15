@@ -1,0 +1,41 @@
+body#popup {
+	font-size: 13px;
+}
+
+body#options {
+	font-size: 15px;
+}
+
+h1 {
+	margin-top: 10px;
+	margin-bottom: 3px;
+	border: 0;
+	padding: 0;
+	font-size: 150%;
+}
+
+h2 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border: 0;
+	padding: 0;
+	font-size: 125%;
+}
+
+p {
+	margin-top: 3px;
+	margin-bottom: 5px;
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	width: 300px;
+}
+
+em {
+	display: block;
+	width: 300px;
+	text-align: right;
+	font-size: 0.9em;
+}

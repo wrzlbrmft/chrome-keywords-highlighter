@@ -4,21 +4,28 @@
 	<title>Keywords Highlighter</title>
 	<script src="common.js"></script>
 	<script src="popup.js"></script>
+	<link rel="stylesheet" href="common.css" />
 </head>
-<body>
+<body id="popup">
 
-<label for="textKeywords">Keywords</label>
-<input id="textKeywords" type="text" /><br />
+<h1>Keywords Highlighter Options</h1>
 
-<label for="colorColor">Highlight</label>
-<input id="colorColor" type="color" />
-on
-<input id="colorBackgroundColor" type="color" /><br />
+<h2>Keywords</h2>
+<p>Which keywords should be highlighted?</p>
+<p><textarea id="textareaKeywords" rows="3"></textarea><br />
+	<em>(comma-separated)</em></p>
 
-<input id="checkboxShowOccurrences" type="checkbox" /> <label for="checkboxShowOccurrences">Show occurrences</label><br />
+<h2>Highlighting</h2>
+<p>What colors should be used?</p>
+<p><input id="colorForeground" type="color" /> <label for="colorForeground">Foreground color</label></p>
+<p><input id="colorBackground" type="color" /> <label for="colorBackground">Background color</label>
+	<em>&nbsp;</em></p>
 
-<button id="buttonCancel" type="button">Cancel</button>
-<button id="buttonSave" type="button">Save</button>
+<h2>More options</h2>
+<p><input id="checkboxShowOccurrences" type="checkbox" /> <label for="checkboxShowOccurrences">Show number of found keywords in icon.</label></p>
+
+<br />
+<button id="buttonSave" type="submit">Save</button> &nbsp;&nbsp;&nbsp; <button id="buttonCancel" type="reset">Cancel</button>
 
 </body>
 </html>

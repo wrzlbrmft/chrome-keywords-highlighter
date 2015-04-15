@@ -14,8 +14,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 							"message": "returnOptions",
 							"remove": request.remove,
 							"keywords": localStorage.getItem("keywords"),
-							"color": localStorage.getItem("color") || "#000000",
-							"backgroundColor": localStorage.getItem("backgroundColor") || "#ffff00",
+							"foreground": localStorage.getItem("foreground") || "#000000",
+							"background": localStorage.getItem("background") || "#ffff00",
 							"showOccurrences": showOccurrences
 						});
 					}
@@ -26,12 +26,12 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-	if ("setHighlightsCount" == request.message) {
+	if ("showOccurrences" == request.message) {
 		var showOccurrences = localStorage.getItem("showOccurrences");
 		showOccurrences = "true" == showOccurrences || null == showOccurrences;
 
 		chrome.browserAction.setBadgeText({
-			"text": showOccurrences && request.highlightsCount ? String(request.highlightsCount) : "",
+			"text": showOccurrences && request.occurrences ? String(request.occurrences) : "",
 			"tabId": sender.tab.id
 		});
 	}
