@@ -122,7 +122,7 @@ line:
 This software is distributed under the terms of the
 [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
-Based on an earlier, outdated Chrome extension also named
+Based on an earlier, outdated Chrome extension named
 *[Keywords Highlighter](https://code.google.com/p/keywords-highlighter/)* which
 was also using
 [highlight](http://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html)
