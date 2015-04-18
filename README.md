@@ -131,6 +131,6 @@ of the [MIT License](http://opensource.org/licenses/MIT).
 
 The icon is taken from the
 *[Soft Scraps Icons](http://www.iconarchive.com/show/soft-scraps-icons-by-hopstarter.html)*
-icons pack by [Jojo Mendoza](https://twitter.com/hopstarter) distributed under
-the terms of the
+icons pack designed by [Jojo Mendoza](https://twitter.com/hopstarter)
+distributed under the terms of the
 [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/) license.
